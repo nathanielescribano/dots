@@ -1,0 +1,16 @@
+# add submodule
+# taken from vimcast site
+cd ~/.dots
+git submodule add http://github.com/tpope/vim-fugitive.git .vim/bundle/fugitive
+git add .
+git commit -m "Install Fugitive.vim bundle as a submodule."
+
+# load submodules
+cd ~/.dots
+git submodule init
+git submodule update
+
+# extra
+# if zoomwin is giving you issues checkout this commit in
+# the zoomwin repo
+6768a6306e5f5abc1ac982cd6c6508341da25095
