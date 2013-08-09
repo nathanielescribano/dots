@@ -1,3 +1,10 @@
+# this isn't meant for other people to use - it may not work correctly
+# and may delete things you dont want it to.
+git clone --recursive https://github.com/nathanielescribano/dotfiles.git ~/.dotfiles
+./setup
+
+
+# NOTES:
 # add submodule
 # taken from vimcast site
 cd ~/.dots
@@ -14,3 +21,5 @@ git submodule update
 # if zoomwin is giving you issues checkout this commit in
 # the zoomwin repo
 6768a6306e5f5abc1ac982cd6c6508341da25095
+
+

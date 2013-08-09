@@ -27,8 +27,8 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.dots/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-cd ~/.dots/.vim/bundle/vim-commandt
-rake make
+# cd ~/.dots/.vim/bundle/vim-commandt
+# rake make
 
 cd ~/.dots/.vim/bundle/vim-ag
 rake install
