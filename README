@@ -1,8 +1,21 @@
 # this isn't meant for other people to use - it may not work correctly
 # and may delete things you dont want it to.
-git clone --recursive https://github.com/nathanielescribano/dotfiles.git ~/.dotfiles
-./setup
+cd ~
+git clone --recursive https://github.com/nathanielescribano/dots.git .dots
 
+./setup.sh
+
+cd ~
+
+git clone --recursive https://github.com/nathanielescribano/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
+done
+
+mkdir ~/.dots/.vim/backup
+
+# you may have to change some things in the .zshrc file.
 
 # NOTES:
 # add submodule
