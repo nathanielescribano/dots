@@ -355,21 +355,22 @@ map F <Leader>F
 let g:EasyMotion_mapping_e = '_e'
 
 nnoremap <leader>' :Ag 
-nnoremap <leader>, :CommandT<CR>
+" nnoremap <leader>, :CommandT<CR>
+nnoremap <leader>, :CtrlP<CR>
 nnoremap <leader>x :BufOnly<CR>
 nnoremap <leader>q :Bclose!<CR>
 
 " Cmd-Shift-R for RSpec
-nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
-nmap <leader>R :call RunRspecCurrentFileConque()<CR>
-" Cmd-r for RSpec Current Line
-nmap <silent> <D-r> :call RunRspecCurrentLineConque()<CR>
-nmap <leader>r :call RunRspecCurrentLineConque()<CR>
-
-" Cmd-Shift-C for Cucumber
-nmap <silent> <D-C> :call RunCucumberCurrentFileConque()<CR>
-" Cmd-c for Cucumber Current Line
-nmap <silent> <D-c> :call RunCucumberCurrentLineConque()<CR>
+" nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
+" nmap <leader>R :call RunRspecCurrentFileConque()<CR>
+" " Cmd-r for RSpec Current Line
+" nmap <silent> <D-r> :call RunRspecCurrentLineConque()<CR>
+" nmap <leader>r :call RunRspecCurrentLineConque()<CR>
+" 
+" " Cmd-Shift-C for Cucumber
+" nmap <silent> <D-C> :call RunCucumberCurrentFileConque()<CR>
+" " Cmd-c for Cucumber Current Line
+" nmap <silent> <D-c> :call RunCucumberCurrentLineConque()<CR>
 
 nnoremap <leader><tab> :Scratch<CR>
 nnoremap <leader>. :LustyBufferGrep<CR>
@@ -458,9 +459,9 @@ set wildignore+=.git,.svn,.log,*.png,*.jpg
 " I may want to use them later
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'vim-asynccommand')
-call add(g:pathogen_disabled, 'vim-jslint')
+" call add(g:pathogen_disabled, 'vim-jslint')
 if !has("gui_running")
-  call add(g:pathogen_disabled, 'vim-jslint')
+  " call add(g:pathogen_disabled, 'vim-jslint')
   "call add(g:pathogen_disabled, 'vim-gitgutter')
 else
   "set gfn=DejaVu\ Sans\ Mono:h12
@@ -520,18 +521,13 @@ au BufRead,BufNewFile *.hamlc set ft=haml
 map Q <Nop>
 autocmd BufNewFile,BufReadPost *.hamlbars set filetype=haml
 
+let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:40,results:40'
+
 call pathogen#infect()
 call pathogen#helptags()
 
 " arpeggio sequences
 call arpeggio#load()
-" Arpeggio noremap oe <Esc>
-" Arpeggio noremap! oe <Esc>
-" Arpeggio xnoremap oe <Esc>
-" Arpeggio snoremap oe <Esc>
-" Arpeggio lnoremap oe <Esc>
 Arpeggio nmap tn <Esc>:w<CR>
 Arpeggio vmap tn <Esc>:w<CR>
 Arpeggio imap tn <Esc>:w<CR>
-
-let g:arpeggio_timeoutlens  = {',':80, 's':80}
