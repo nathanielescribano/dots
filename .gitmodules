@@ -126,8 +126,8 @@
 [submodule ".vim/bundle/vim-addon-mw-utils"]
 	path = .vim/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "/Users/nescribano/.dots/.vim/bundle/numbers"]
-	path = /Users/nescribano/.dots/.vim/bundle/numbers
+[submodule ".vim/bundle/numbers"]
+	path = .vim/bundle/numbers
 	url = https://github.com/myusuf3/numbers.vim.git
 [submodule ".vim/bundle/vim-bclose"]
 	path = .vim/bundle/vim-bclose
