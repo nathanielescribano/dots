@@ -128,3 +128,6 @@
 [submodule ".vim/bundle/vim-bclose"]
 	path = .vim/bundle/vim-bclose
 	url = https://github.com/rbgrouleff/bclose.vim.git
+[submodule ".zprezto"]
+	path = .zprezto
+	url = https://github.com/nathanielescribano/prezto.git
