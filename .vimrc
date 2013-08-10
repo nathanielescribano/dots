@@ -358,7 +358,7 @@ nnoremap <leader>' :Ag
 " nnoremap <leader>, :CommandT<CR>
 nnoremap <leader>, :CtrlP<CR>
 nnoremap <leader>x :BufOnly<CR>
-nnoremap <leader>q :Bclose!<CR>
+nnoremap <leader>q :Kwbd<CR>
 
 " Cmd-Shift-R for RSpec
 " nmap <silent> <D-R> :call RunRspecCurrentFileConque()<CR>
