@@ -431,6 +431,7 @@ noremap cp :let @+ = expand("%:p")<CR>
 " map that aligns on '=' marks
 vnoremap <C-a> :Tabularize /=<CR>
 vnoremap <C-b> :Tabularize /:\zs<CR>
+vnoremap <C-x> :Tabularize /=><CR>
 
 " switch the mapping of 0 and ^
 " since it's a little easier to
