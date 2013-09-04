@@ -460,6 +460,7 @@ set wildignore+=.git,.svn,.log,*.png,*.jpg
 " I may want to use them later
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'vim-asynccommand')
+call add(g:pathogen_disabled, 'vim-powerline')
 " call add(g:pathogen_disabled, 'vim-jslint')
 if !has("gui_running")
   " call add(g:pathogen_disabled, 'vim-jslint')

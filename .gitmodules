@@ -134,3 +134,9 @@
 [submodule ".vim/bundle/vim-emmet"]
 	path = .vim/bundle/vim-emmet
 	url = https://github.com/mattn/emmet-vim.git
+[submodule ".vim/bundle/vim-airline"]
+	path = .vim/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule ".vim/bundle/vim-numbers"]
+	path = .vim/bundle/vim-numbers
+	url = https://github.com/myusuf3/numbers.vim.git
