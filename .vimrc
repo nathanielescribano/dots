@@ -422,6 +422,8 @@ set autoread
 " :80D deletes a line in location 80
 command! -range -nargs=0 D <line1>,<line2>d|norm ``
 
+command -nargs=1 E execute('silent! !mkdir -p "$(dirname "<args>")"') <Bar> e <args>
+
 " cp yanks the path of the file
 noremap cp :let @+ = expand("%:p")<CR>
 
@@ -432,6 +434,12 @@ noremap cp :let @+ = expand("%:p")<CR>
 vnoremap <C-a> :Tabularize /=<CR>
 vnoremap <C-b> :Tabularize /:\zs<CR>
 vnoremap <C-x> :Tabularize /=><CR>
+vnoremap <C-m> :Tabularize /,<CR>
+
+vnoremap <C-,> :Tabularize /,<CR>
+vnoremap <C-=> :Tabularize /=<CR>
+vnoremap <C-:> :Tabularize /:\zs<CR>
+vnoremap <C->> :Tabularize /=><CR>
 
 " switch the mapping of 0 and ^
 " since it's a little easier to
