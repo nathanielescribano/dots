@@ -543,3 +543,5 @@ call arpeggio#load()
 Arpeggio nmap tn <Esc>:w<CR>
 Arpeggio vmap tn <Esc>:w<CR>
 Arpeggio imap tn <Esc>:w<CR>
+
+let g:arpeggio_timeoutlens = {'t':30, 'n':30}
