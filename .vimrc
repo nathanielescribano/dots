@@ -434,12 +434,13 @@ noremap cp :let @+ = expand("%:p")<CR>
 vnoremap <C-a> :Tabularize /=<CR>
 vnoremap <C-b> :Tabularize /:\zs<CR>
 vnoremap <C-x> :Tabularize /=><CR>
-vnoremap <C-m> :Tabularize /,<CR>
+vnoremap <C-m> :Tabularize /,\zs<CR>
 
 vnoremap <C-,> :Tabularize /,<CR>
 vnoremap <C-=> :Tabularize /=<CR>
 vnoremap <C-:> :Tabularize /:\zs<CR>
 vnoremap <C->> :Tabularize /=><CR>
+
 
 " switch the mapping of 0 and ^
 " since it's a little easier to
