@@ -143,3 +143,6 @@
 [submodule ".vim/bundle/vim-highlight"]
 	path = .vim/bundle/vim-highlight
 	url = https://github.com/vim-scripts/highlight_current_line.vim.git
+[submodule ".vim/bundle/vim-nerdcommenter"]
+	path = .vim/bundle/vim-nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git

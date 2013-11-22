@@ -474,6 +474,7 @@ call add(g:pathogen_disabled, 'vim-powerline')
 if !has("gui_running")
   " call add(g:pathogen_disabled, 'vim-jslint')
   "call add(g:pathogen_disabled, 'vim-gitgutter')
+  call add(g:pathogen_disabled, 'vim-highlight')
 else
   "set gfn=DejaVu\ Sans\ Mono:h12
   "set gfn=Menlo\ Bold:h12
