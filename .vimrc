@@ -550,5 +550,9 @@ call pathogen#helptags()
 let g:arpeggio_timeoutlens = {'t':30, 'n':30}
 let g:user_emmet_expandabbr_key = '<c-h>'
 
+let g:syntastic_mode_map={ 'mode': 'active',
+                     \ 'active_filetypes': [],
+                     \ 'passive_filetypes': ['html'] }
+
 " spacebar now saves
 nnoremap <space> :w<CR>
