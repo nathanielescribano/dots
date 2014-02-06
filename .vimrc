@@ -17,6 +17,8 @@ set number
 set tabstop=2
 set shiftwidth=2
 
+set cursorline
+
 " set the search scan to wrap lines
 set wrapscan
 
@@ -470,6 +472,8 @@ set wildignore+=.git,.svn,.log,*.png,*.jpg
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'vim-asynccommand')
 call add(g:pathogen_disabled, 'vim-powerline')
+call add(g:pathogen_disabled, 'vim-arpeggio')
+call add(g:pathogen_disabled, 'vim-highlight')
 " call add(g:pathogen_disabled, 'vim-jslint')
 if !has("gui_running")
   " call add(g:pathogen_disabled, 'vim-jslint')
