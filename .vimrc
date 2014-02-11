@@ -429,9 +429,6 @@ command -nargs=1 E execute('silent! !mkdir -p "$(dirname "<args>")"') <Bar> e <a
 " cp yanks the path of the file
 noremap cp :let @+ = expand("%:p")<CR>
 
-" copies all yanking to clipboard
-" set clipboard=unnamed
-
 " map that aligns on '=' marks
 vnoremap <C-a> :Tabularize /=<CR>
 vnoremap <C-b> :Tabularize /:\zs<CR>
@@ -483,6 +480,10 @@ else
   "set gfn=DejaVu\ Sans\ Mono:h12
   "set gfn=Menlo\ Bold:h12
   set gfn=Menlo:h12
+
+  " copies all yanking to clipboard
+  " this breaks in tmux for some reason
+  set clipboard=unnamed
 endif
 
 " make exiting insert mode quicker in powerline
