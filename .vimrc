@@ -472,7 +472,6 @@ call add(g:pathogen_disabled, 'vim-asynccommand')
 call add(g:pathogen_disabled, 'vim-powerline')
 call add(g:pathogen_disabled, 'vim-arpeggio')
 call add(g:pathogen_disabled, 'vim-highlight')
-call add(g:pathogen_disabled, 'vim-seek')
 " call add(g:pathogen_disabled, 'vim-jslint')
 if !has("gui_running")
   " call add(g:pathogen_disabled, 'vim-jslint')
@@ -560,6 +559,12 @@ let g:user_emmet_expandabbr_key = '<c-h>'
 let g:syntastic_mode_map={ 'mode': 'active',
                      \ 'active_filetypes': [],
                      \ 'passive_filetypes': ['html'] }
+
+" i want to use vim - seek
+" because of it's advanced features
+" and i want to use vim - sneak
+" because of it's repeat function
+let g:SeekKey = 'z'
 
 " spacebar now saves
 nnoremap <space> :w<CR>
