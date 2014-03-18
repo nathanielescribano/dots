@@ -13,11 +13,11 @@ filetype indent on
 
 set number
 
+set cursorline
+
 " Tabstops are 4 spaces
 set tabstop=2
 set shiftwidth=2
-
-set cursorline
 
 " set the search scan to wrap lines
 set wrapscan
@@ -387,8 +387,9 @@ set ts=8 sts=2 sw=2
 set list listchars=tab:\ \ ,trail:·
 
 " Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set nobackup
+"set backupdir=~/.vim/backup
+"set directory=~/.vim/backup
 
 " Disable swap files - trying it out for now
 set noswapfile
@@ -562,3 +563,5 @@ let g:syntastic_mode_map={ 'mode': 'active',
 
 " spacebar now saves
 nnoremap <space> :w<CR>
+
+set regexpengine=1
