@@ -536,6 +536,7 @@ nnoremap - :Switch<cr>
 
 " treat .hamlc files as .haml
 au BufRead,BufNewFile *.hamlc set ft=haml
+au BufRead,BufNewFile *.handlebars,*.hbs set ft=html
 
 " disabling ex mode. i hate that shit
 map Q <Nop>
