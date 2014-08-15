@@ -2,10 +2,6 @@
 map K gt
 map J gT
 
-" faster scrolling
-noremap j 5j
-noremap k 5k
-
 " map previous selected tab
 map a <C-^>
 

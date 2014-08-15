@@ -570,4 +570,6 @@ let g:SeekKey = 'z'
 " spacebar now saves
 nnoremap <space> :w<CR>
 
+let g:sneak#s_next = 1
+
 set regexpengine=1
