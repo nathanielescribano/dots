@@ -472,6 +472,12 @@ call add(g:pathogen_disabled, 'vim-asynccommand')
 call add(g:pathogen_disabled, 'vim-powerline')
 call add(g:pathogen_disabled, 'vim-arpeggio')
 call add(g:pathogen_disabled, 'vim-highlight')
+call add(g:pathogen_disabled, 'vim-supertab')
+call add(g:pathogen_disabled, 'vim-snipmate')
+call add(g:pathogen_disabled, 'vim-snipmate-snippets')
+call add(g:pathogen_disabled, 'vim-nerdcommenter')
+call add(g:pathogen_disabled, 'vim-sneak')
+" call add(g:pathogen_disabled, 'vim-seek')
 " call add(g:pathogen_disabled, 'vim-jslint')
 if !has("gui_running")
   " call add(g:pathogen_disabled, 'vim-jslint')
@@ -547,14 +553,6 @@ let g:ctrlp_match_window = 'bottom,order:btt,min:1,max:40,results:40'
 call pathogen#infect()
 call pathogen#helptags()
 
-" arpeggio sequences
-" call arpeggio#load()
-" Arpeggio nmap tn <Esc>:w<CR>
-" Arpeggio vmap tn <Esc>:w<CR>
-" Arpeggio imap oent <Esc>:w<CR>
-" Arpeggio imap tn <Esc>:w<CR>
-
-let g:arpeggio_timeoutlens = {'t':30, 'n':30}
 let g:user_emmet_expandabbr_key = '<c-h>'
 
 let g:syntastic_mode_map={ 'mode': 'active',
@@ -571,5 +569,10 @@ let g:SeekKey = 'z'
 nnoremap <space> :w<CR>
 
 let g:sneak#s_next = 1
+
+"nmap s <Plug>(easymotion-s)
+nmap s <Plug>(easymotion-bd-w)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 
 set regexpengine=1
