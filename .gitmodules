@@ -2,14 +2,6 @@
 	path = .vim/bundle/vim-ag
 	url = https://github.com/epmatsw/ag.vim.git
         ignore = dirty
-[submodule ".vim/bundle/vim-arpeggio"]
-	path = .vim/bundle/vim-arpeggio
-	url = https://github.com/kana/vim-arpeggio.git
-        ignore = dirty
-[submodule ".vim/bundle/vim-asynccommand"]
-	path = .vim/bundle/vim-asynccommand
-	url = https://github.com/pydave/AsyncCommand.git
-        ignore = dirty
 [submodule ".vim/bundle/vim-bufonly"]
 	path = .vim/bundle/vim-bufonly
 	url = https://github.com/duff/vim-bufonly.git
@@ -46,10 +38,6 @@
 	path = .vim/bundle/vim-nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
         ignore = dirty
-[submodule ".vim/bundle/vim-powerline"]
-	path = .vim/bundle/vim-powerline
-	url = https://github.com/Lokaltog/powerline.git
-        ignore = dirty
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
@@ -69,14 +57,6 @@
 [submodule ".vim/bundle/vim-seek"]
 	path = .vim/bundle/vim-seek
 	url = https://github.com/goldfeld/vim-seek.git
-        ignore = dirty
-[submodule ".vim/bundle/vim-snipmate-snippets"]
-	path = .vim/bundle/vim-snipmate-snippets
-	url = https://github.com/scrooloose/snipmate-snippets.git
-        ignore = dirty
-[submodule ".vim/bundle/vim-supertab"]
-	path = .vim/bundle/vim-supertab
-	url = https://github.com/ervandew/supertab.git
         ignore = dirty
 [submodule ".vim/bundle/vim-repeat"]
 	path = .vim/bundle/vim-repeat
@@ -113,9 +93,6 @@
 [submodule ".vim/bundle/vim-ctrlp"]
 	path = .vim/bundle/vim-ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule ".vim/bundle/vim-snipmate"]
-	path = .vim/bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
 [submodule ".vim/bundle/vim-tlib"]
 	path = .vim/bundle/vim-tlib
 	url = https://github.com/tomtom/tlib_vim.git
@@ -140,18 +117,9 @@
 [submodule ".vim/bundle/vim-numbers"]
 	path = .vim/bundle/vim-numbers
 	url = https://github.com/myusuf3/numbers.vim.git
-[submodule ".vim/bundle/vim-highlight"]
-	path = .vim/bundle/vim-highlight
-	url = https://github.com/vim-scripts/highlight_current_line.vim.git
-[submodule ".vim/bundle/vim-nerdcommenter"]
-	path = .vim/bundle/vim-nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule ".vim/bundle/vim-multiple-cursors"]
 	path = .vim/bundle/vim-multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
-[submodule ".vim/bundle/vim-sneak"]
-	path = .vim/bundle/vim-sneak
-	url = https://github.com/justinmk/vim-sneak.git
 [submodule ".vim/bundle/vim-commentary"]
 	path = .vim/bundle/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git

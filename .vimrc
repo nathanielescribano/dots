@@ -468,24 +468,9 @@ set wildignore+=.git,.svn,.log,*.png,*.jpg
 " I'm just keeping around because
 " I may want to use them later
 let g:pathogen_disabled = []
-call add(g:pathogen_disabled, 'vim-asynccommand')
-call add(g:pathogen_disabled, 'vim-powerline')
-call add(g:pathogen_disabled, 'vim-arpeggio')
-call add(g:pathogen_disabled, 'vim-highlight')
-call add(g:pathogen_disabled, 'vim-supertab')
-call add(g:pathogen_disabled, 'vim-snipmate')
-call add(g:pathogen_disabled, 'vim-snipmate-snippets')
-call add(g:pathogen_disabled, 'vim-nerdcommenter')
-call add(g:pathogen_disabled, 'vim-sneak')
-" call add(g:pathogen_disabled, 'vim-seek')
-" call add(g:pathogen_disabled, 'vim-jslint')
 if !has("gui_running")
-  " call add(g:pathogen_disabled, 'vim-jslint')
-  "call add(g:pathogen_disabled, 'vim-gitgutter')
   call add(g:pathogen_disabled, 'vim-highlight')
 else
-  "set gfn=DejaVu\ Sans\ Mono:h12
-  "set gfn=Menlo\ Bold:h12
   set gfn=Menlo:h12
 
   " copies all yanking to clipboard
